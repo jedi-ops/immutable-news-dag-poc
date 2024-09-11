@@ -26,11 +26,16 @@ Welty and Torres-Valderas' implementation leverages the Constellation Network's 
 
 ### 2.2 State Channel Implementation
 
-The network utilizes Constellation's state channels, developed and implemented by the Intrana-Yeetum team. These state channels enable conditional information release, time-sensitive data updates, and secure handling of sensitive data. This approach offers several advantages:
+The network utilizes Constellation's state channels, developed and implemented by the Intrana-Yeetum team. These state channels enable conditional information release, time-sensitive data updates, and secure handling of sensitive data. 
+
+This approach offers several advantages:
 
 a) **Scalability**: State channels allow for off-chain transactions and data handling, significantly improving the network's throughput and reducing congestion.
+
 b) **Flexibility**: The state channel architecture provides greater adaptability in defining and updating the rules governing information flow and access control.
+
 c) **Efficiency**: By processing most operations off-chain and only settling the final state on the main network, the platform achieves higher efficiency in terms of both speed and resource utilization.
+
 d) **Privacy**: State channels offer enhanced privacy features, as intermediate states and transactions don't need to be broadcast to the entire network.
 
 The implementation of these state channels forms the crux of the network's enhanced security and controlled information dissemination capabilities, representing a significant advancement in DAG-based data management.
