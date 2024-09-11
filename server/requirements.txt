@@ -1,0 +1,8 @@
+fastapi[standard]
+uvicorn
+newspaper3k
+pydantic
+lxml[html_clean]
+motor
+pymongo[srv]
+python-dotenv

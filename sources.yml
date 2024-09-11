@@ -1,0 +1,51 @@
+sources:
+  - name: Illicit Edge
+    url: https://illicitedge.com
+    type: financial_crime_news
+    description: Daily financial crime newsletter and website
+    topics:
+      - sanctions
+      - money_laundering
+      - terrorist_financing
+      - cybercrime
+      - corruption
+    update_frequency: daily
+    subscription_required: true
+
+  - name: Yeetum Security Intelligence
+    url: https://cloud.yeetum.com
+    type: security_intelligence
+    description: Cybersecurity and threat intelligence platform
+    topics:
+      - cyber_threats
+      - vulnerability_assessments
+      - incident_response
+      - threat_actors
+      - security_advisories
+    update_frequency: real-time
+    subscription_required: true
+
+  - name: Financial Crimes Bulletin
+    url: https://illicitedge.com/fcb
+    type: specialized_newsletter
+    description: Weekly in-depth analysis of financial crimes
+    topics:
+      - regulatory_updates
+      - case_studies
+      - emerging_threats
+      - compliance_best_practices
+    update_frequency: weekly
+    subscription_required: true
+
+  - name: Yeetum Threat Intel Feed
+    url: https://si.yeetum.com/feed
+    type: data_feed
+    description: Real-time threat intelligence data feed
+    topics:
+      - malware_signatures
+      - ip_blacklists
+      - phishing_campaigns
+      - zero_day_vulnerabilities
+    update_frequency: continuous
+    subscription_required: true
+    api_access: true
