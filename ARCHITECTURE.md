@@ -3,13 +3,17 @@
 ## General Data Flow Diagram
 ```mermaid
 flowchart TD
-    A[Client] -->|Submit News| B[Server]
+    U[User] -->|Connects via Stargazer| A[Client]
+    A -->|Submit News| B[Server]
     B -->|Validate & Store| C[(MongoDB)]
-    C -->|Pull Data| D[Metagraph Data L1]
+    B -->|Mint NFT| D[Metagraph Data L1]
     D -->|Tokenize, Snapshot, & Make Immutable| E[Metagraph L0]
     A -->|Request News| B
     B -->|Retrieve Data| C
     B -->|Serve News| A
+    D -->|Confirm NFT Minted| B
+    E -->|Confirm Snapshot| D
+    B -->|Notify NFT Minted & Snapshot Complete| A
 ```
 ## News Specific Data Flow Diagram
 ```mermaid
@@ -31,7 +35,7 @@ sequenceDiagram
             S->>M: Store news item with crawled content
             M-->>S: Confirmation
             S->>C: 200 OK
-            M->>CMD1: Pull new data
+            M->>CMD1: Mint NFT
             CMD1->>CMD0: Snapshot & Tokenize
         else Crawling failed
             NC-->>S: Crawling error
