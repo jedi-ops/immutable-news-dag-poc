@@ -1,6 +1,8 @@
 # Architecture 
+These diagrams emphasize the integration of Constellatiion's Blockchain technology (Metagraph) for data immutability and NFT creation, alongside traditional web server and database interactions for news management.
 
 ## General Data Flow Diagram
+The diagram illustrates the overall flow of data in the system. Users connect to the client via Stargazer. The client can submit news to the server, which validates and stores it in MongoDB. The server then mints an NFT on the Metagraph Data L1, which is further tokenized and made immutable on the Metagraph L0. The client can also request news, which the server retrieves from MongoDB and serves back. The system provides notifications for NFT minting and snapshot completion.
 ```mermaid
 flowchart TD
     U[User] -->|Connects via Stargazer| A[Client]
@@ -16,6 +18,10 @@ flowchart TD
     B -->|Notify NFT Minted & Snapshot Complete| A
 ```
 ## News Specific Data Flow Diagram
+This sequence diagram details the process of submitting and retrieving news:
+    - News Submission: The client submits news, the server checks for duplicates, and if unique, crawls the news source. Successful crawls result in storing the news item, minting an NFT, and snapshotting on the Metagraph layers.
+    - News Retrieval: Clients can request news items, either in batches or individually by UUID, which the server fetches from MongoDB and returns.
+
 ```mermaid
 sequenceDiagram
     participant C as Client
