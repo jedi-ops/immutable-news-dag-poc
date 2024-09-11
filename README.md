@@ -86,3 +86,8 @@ The network's focus on financial crime news and its global accessibility contrib
 ## Conclusion
 
 The Encrypted News Network, born from the collaborative efforts of Court Welty, Tobalo Torres-Valderas, and Ryan Wallerstein, represents a significant leap forward in the confluence of DAG technology, journalism, and information security. By addressing the critical needs of secure information sharing, decentralized storage, and verifiable authenticity, it establishes a new paradigm for how sensitive information is disseminated, stored, and analyzed. As the network evolves, it holds the potential to revolutionize not only financial crime reporting but also broader aspects of secure communication and decentralized journalism, setting new standards for transparency, security, and information integrity in the digital age. The innovative approach of the development team, combined with Wallerstein's domain expertise, positions this network at the forefront of DAG-based information systems, with far-reaching implications for global information security and journalistic practices.
+
+### Contributors:
+- Court Welty
+- Tobalo Torres-Valderas
+- Ryan Wallerstein
